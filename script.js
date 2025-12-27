@@ -179,6 +179,9 @@ class QuizGame {
         } else if (currentSpan.dataset.correct  === 'false') {
 
           currentButton.style.backgroundColor = 'red'
+          
+          currentSpan = this.listOptions.querySelector('span[data-correct="true"]')
+          currentSpan.closest('button').style.backgroundColor = 'green'
         }
 
         if (this.currentQuestionIndex + 1 >= this.allQuestion) {
