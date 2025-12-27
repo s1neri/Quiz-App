@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  background-color: lightblue;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 40px;
+  text-align: center;
+  width: 400px;
+}
+
+.container:not(.is-active) {
+  display: none;
+}
+
+.container__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container__score {
+  display: inline-block;
+  padding: 10px;
+  box-shadow: 0 0 5px 1px gray inset;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: rebeccapurple;
+  border-radius: 15px;
+}
+
+.container__question {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.container__category {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 600;
+  padding: 10px;
+  background-color: rebeccapurple;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.container__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.container__item {
+}
+
+.container__button {
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  background-color: rebeccapurple;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  box-shadow: 2px 2px 1px 1px gray;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.container__button:hover {
+  background-color: lightgray;
+  box-shadow: 2px 2px 1px 1px rebeccapurple;
+}
+
+.check-answer {
+  padding: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: lightgray;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 1px 1px darkgray;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.check-answer:hover {
+  background-color: rebeccapurple;
+  color: #fff;
+}
+
+.final-result {
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.final-result:not(.is-active) {
+  display: none;
+}
+
+.final-resul__description {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.final-result__reset-button {
+  padding: 10px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  background-color: rebeccapurple;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.final-result__reset-button:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+
+
